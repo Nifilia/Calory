@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://kit.fontawesome.com/75c2e5508d.js" crossorigin="anonymous"></script>
+		<style>
+			.hidden {display: none;}
+		</style>
+		<title>calorie project</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<div class="nav-wrapper blue">
+				<div class="container">
+					<a href="#" class="brand-logo aligncenter">Track calories</a>
+					<button class="clear-btn btn right-align blue lighten-4">clear all</button>
+				</div>
+			</div>
+		</nav>
+
+		<br>
+
+		<div class="container">
+			<!-- form card -->
+			<div class="card">
+				<div class="card-content">
+					<span class="card-title">Add Meal / Food Item</span>
+					<form class="col">
+						<div class="row">
+							<div class="input-field col s6">
+								<input type="text" placeholder="Add Item" id="item-name">
+								<label for="item-name">Meal</label>
+							</div>
+							<div class="input-field col s6">
+								<input type="text" placeholder="Add calories" id="item-calories">
+								<label for="item-calories">Calories</label>
+							</div>
+							<button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i>Add Meal</button>
+							<div class="hidden edit-btns">
+								<button class="update-btn btn orange darken-1"><i class="fas fa-edit"></i>update meal</button>
+								<button class="del-btn btn red"><i class="fas fa-trash"></i>delete meal</button>
+								<button class="back-btn btn grey darken-1 col s2 right"><i class="fas fa-arrow-circle-left"></i>back</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		<!-- Calorie Count -->
+		<h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+
+		<!-- Item List -->
+		<ul id="item-list" class="collection"></ul>
+
+		</div>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
